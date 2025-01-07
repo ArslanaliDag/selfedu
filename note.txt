@@ -1,2 +1,11 @@
 Плей-лист в YouTube на уроки по Python Сеогея Балакирева:
 https://www.youtube.com/playlist?list=PLA0M1Bcd0w8zPwP7t-FgwONhZOHt9rz9E
+
+C:/Users/suleymanov/AppData/Local/Microsoft/WindowsApps/python3.13.exe -m venv venv
+.\venv\Scripts\activate
+
+Выгрузит все установленные пакеты в файл с версиями.
+pip freeze > requirements.txt
+
+Установка
+pip install -r requirements.txt
