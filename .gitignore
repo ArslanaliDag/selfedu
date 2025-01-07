@@ -1,1 +1,7 @@
 venv/
+.git/
+.vscode/
+
+Инкапсуляция/__pycache__/
+Классы/__pycache__/
+Полиморфизм/__pycache__/

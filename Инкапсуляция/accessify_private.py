@@ -36,3 +36,9 @@ pt = Point()
 pt.set_coord(2, 33)
 pt.check_value(5)
 # accessify.errors.InaccessibleDueToItsProtectionLevelException: Point.check_value() is inaccessible due to its protection level
+# то есть тут мы не вызовим метод check_value потому что он помечен как протектед
+# а если мы уберем декоратор @private то никаких ошибок не будет и этот метод будет ка кобычный метод класса
+# декорация читается сверху вниз т. е. в начале @private потом @classmethod в такой последовательности
+# использование модуля accessify и его декораторов private, protected является более сильной защитой метода чем стандартное __ 
+# стандартное __ мы можем обойти вызвав метод так pt._Point__check_value(5), а при использовании accessify так не сделаешь.
+# accessify используют когда очень надежно надо защитить методы, обычно бывает достаточно стандартного __ двойного подчеркивания
